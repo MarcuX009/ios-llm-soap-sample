@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAA616672DD539E4005E5907 /* MLXEmbedders in Frameworks */ = {isa = PBXBuildFile; productRef = CAA616662DD539E4005E5907 /* MLXEmbedders */; };
+		CAA616692DD539E4005E5907 /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = CAA616682DD539E4005E5907 /* MLXLLM */; };
+		CAA6166B2DD539E4005E5907 /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = CAA6166A2DD539E4005E5907 /* MLXLMCommon */; };
+		CAA6166D2DD539E4005E5907 /* MLXMNIST in Frameworks */ = {isa = PBXBuildFile; productRef = CAA6166C2DD539E4005E5907 /* MLXMNIST */; };
+		CAA6166F2DD539E4005E5907 /* MLXVLM in Frameworks */ = {isa = PBXBuildFile; productRef = CAA6166E2DD539E4005E5907 /* MLXVLM */; };
+		CAA616742DD53B05005E5907 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = CAA616732DD53B05005E5907 /* AsyncAlgorithms */; };
+		CAA616772DD53B3B005E5907 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = CAA616762DD53B3B005E5907 /* MarkdownUI */; };
+		CAA617902DD57CB4005E5907 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA617842DD57CB4005E5907 /* ContentView.swift */; };
+		CAA617912DD57CB4005E5907 /* LLMEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA617852DD57CB4005E5907 /* LLMEvaluator.swift */; };
+		CAA617922DD57CB4005E5907 /* LLMRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA617862DD57CB4005E5907 /* LLMRegistry.swift */; };
+		CAA617932DD57CB4005E5907 /* Qwen3_testerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA6178A2DD57CB4005E5907 /* Qwen3_testerApp.swift */; };
+		CAA617952DD57CB4005E5907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA617822DD57CB4005E5907 /* Assets.xcassets */; };
+		CAA617A12DD57FDC005E5907 /* PatientInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA617A02DD57FDC005E5907 /* PatientInput.swift */; };
+		CAA617A32DD58665005E5907 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA617A22DD58665005E5907 /* ContentViewModel.swift */; };
+		CAC6F8902DF6396A00E9BEA1 /* tokenizer.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F88D2DF6396A00E9BEA1 /* tokenizer.json */; };
+		CAC6F8912DF6396A00E9BEA1 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F8882DF6396A00E9BEA1 /* config.json */; };
+		CAC6F8922DF6396A00E9BEA1 /* vocab.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F88F2DF6396A00E9BEA1 /* vocab.json */; };
+		CAC6F8932DF6396A00E9BEA1 /* merges.txt in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F8892DF6396A00E9BEA1 /* merges.txt */; };
+		CAC6F8942DF6396A00E9BEA1 /* model.safetensors.index.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F88B2DF6396A00E9BEA1 /* model.safetensors.index.json */; };
+		CAC6F8952DF6396A00E9BEA1 /* special_tokens_map.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F88C2DF6396A00E9BEA1 /* special_tokens_map.json */; };
+		CAC6F8962DF6396A00E9BEA1 /* added_tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F8872DF6396A00E9BEA1 /* added_tokens.json */; };
+		CAC6F8972DF6396A00E9BEA1 /* tokenizer_config.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F88E2DF6396A00E9BEA1 /* tokenizer_config.json */; };
+		CAC6F8982DF6396A00E9BEA1 /* model.safetensors in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F88A2DF6396A00E9BEA1 /* model.safetensors */; };
+		CAC6F8992DF6396A00E9BEA1 /* tokenizer.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F88D2DF6396A00E9BEA1 /* tokenizer.json */; };
+		CAC6F89A2DF6396A00E9BEA1 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F8882DF6396A00E9BEA1 /* config.json */; };
+		CAC6F89B2DF6396A00E9BEA1 /* vocab.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F88F2DF6396A00E9BEA1 /* vocab.json */; };
+		CAC6F89C2DF6396A00E9BEA1 /* merges.txt in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F8892DF6396A00E9BEA1 /* merges.txt */; };
+		CAC6F89D2DF6396A00E9BEA1 /* model.safetensors.index.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F88B2DF6396A00E9BEA1 /* model.safetensors.index.json */; };
+		CAC6F89E2DF6396A00E9BEA1 /* special_tokens_map.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F88C2DF6396A00E9BEA1 /* special_tokens_map.json */; };
+		CAC6F89F2DF6396A00E9BEA1 /* added_tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F8872DF6396A00E9BEA1 /* added_tokens.json */; };
+		CAC6F8A02DF6396A00E9BEA1 /* tokenizer_config.json in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F88E2DF6396A00E9BEA1 /* tokenizer_config.json */; };
+		CAC6F8A12DF6396A00E9BEA1 /* model.safetensors in Resources */ = {isa = PBXBuildFile; fileRef = CAC6F88A2DF6396A00E9BEA1 /* model.safetensors */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAA6160F2DD310CA005E5907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAA615F92DD310C9005E5907 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAA616002DD310C9005E5907;
+			remoteInfo = Qwen3_tester;
+		};
+		CAA616192DD310CA005E5907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAA615F92DD310C9005E5907 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAA616002DD310C9005E5907;
+			remoteInfo = Qwen3_tester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CAA616012DD310C9005E5907 /* Qwen3_tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qwen3_tester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA6160E2DD310CA005E5907 /* Qwen3_testerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Qwen3_testerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA616182DD310CA005E5907 /* Qwen3_testerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Qwen3_testerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA617822DD57CB4005E5907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAA617842DD57CB4005E5907 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CAA617852DD57CB4005E5907 /* LLMEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMEvaluator.swift; sourceTree = "<group>"; };
+		CAA617862DD57CB4005E5907 /* LLMRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMRegistry.swift; sourceTree = "<group>"; };
+		CAA6178A2DD57CB4005E5907 /* Qwen3_testerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qwen3_testerApp.swift; sourceTree = "<group>"; };
+		CAA617A02DD57FDC005E5907 /* PatientInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientInput.swift; sourceTree = "<group>"; };
+		CAA617A22DD58665005E5907 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CAC6F8872DF6396A00E9BEA1 /* added_tokens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = added_tokens.json; sourceTree = "<group>"; };
+		CAC6F8882DF6396A00E9BEA1 /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		CAC6F8892DF6396A00E9BEA1 /* merges.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = merges.txt; sourceTree = "<group>"; };
+		CAC6F88A2DF6396A00E9BEA1 /* model.safetensors */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.safetensors; sourceTree = "<group>"; };
+		CAC6F88B2DF6396A00E9BEA1 /* model.safetensors.index.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = model.safetensors.index.json; sourceTree = "<group>"; };
+		CAC6F88C2DF6396A00E9BEA1 /* special_tokens_map.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = special_tokens_map.json; sourceTree = "<group>"; };
+		CAC6F88D2DF6396A00E9BEA1 /* tokenizer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tokenizer.json; sourceTree = "<group>"; };
+		CAC6F88E2DF6396A00E9BEA1 /* tokenizer_config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tokenizer_config.json; sourceTree = "<group>"; };
+		CAC6F88F2DF6396A00E9BEA1 /* vocab.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vocab.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CAA616112DD310CA005E5907 /* Qwen3_testerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Qwen3_testerTests;
+			sourceTree = "<group>";
+		};
+		CAA6161B2DD310CA005E5907 /* Qwen3_testerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Qwen3_testerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAA615FE2DD310C9005E5907 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA6166F2DD539E4005E5907 /* MLXVLM in Frameworks */,
+				CAA616772DD53B3B005E5907 /* MarkdownUI in Frameworks */,
+				CAA6166D2DD539E4005E5907 /* MLXMNIST in Frameworks */,
+				CAA616692DD539E4005E5907 /* MLXLLM in Frameworks */,
+				CAA6166B2DD539E4005E5907 /* MLXLMCommon in Frameworks */,
+				CAA616672DD539E4005E5907 /* MLXEmbedders in Frameworks */,
+				CAA616742DD53B05005E5907 /* AsyncAlgorithms in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA6160B2DD310CA005E5907 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA616152DD310CA005E5907 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAA615F82DD310C9005E5907 = {
+			isa = PBXGroup;
+			children = (
+				CAA6164F2DD3146F005E5907 /* Frameworks */,
+				CAA616022DD310C9005E5907 /* Products */,
+				CAA6178F2DD57CB4005E5907 /* Qwen3_tester */,
+				CAA616112DD310CA005E5907 /* Qwen3_testerTests */,
+				CAA6161B2DD310CA005E5907 /* Qwen3_testerUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		CAA616022DD310C9005E5907 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAA616012DD310C9005E5907 /* Qwen3_tester.app */,
+				CAA6160E2DD310CA005E5907 /* Qwen3_testerTests.xctest */,
+				CAA616182DD310CA005E5907 /* Qwen3_testerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAA6164F2DD3146F005E5907 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAA6178F2DD57CB4005E5907 /* Qwen3_tester */ = {
+			isa = PBXGroup;
+			children = (
+				CAA617842DD57CB4005E5907 /* ContentView.swift */,
+				CAA617A22DD58665005E5907 /* ContentViewModel.swift */,
+				CAA617852DD57CB4005E5907 /* LLMEvaluator.swift */,
+				CAA617862DD57CB4005E5907 /* LLMRegistry.swift */,
+				CAA6178A2DD57CB4005E5907 /* Qwen3_testerApp.swift */,
+				CAA617822DD57CB4005E5907 /* Assets.xcassets */,
+				CAA6179E2DD57CBA005E5907 /* LLM */,
+				CAA6179F2DD57FCF005E5907 /* Models */,
+			);
+			path = Qwen3_tester;
+			sourceTree = "<group>";
+		};
+		CAA6179E2DD57CBA005E5907 /* LLM */ = {
+			isa = PBXGroup;
+			children = (
+				CAC6F8872DF6396A00E9BEA1 /* added_tokens.json */,
+				CAC6F8882DF6396A00E9BEA1 /* config.json */,
+				CAC6F8892DF6396A00E9BEA1 /* merges.txt */,
+				CAC6F88A2DF6396A00E9BEA1 /* model.safetensors */,
+				CAC6F88B2DF6396A00E9BEA1 /* model.safetensors.index.json */,
+				CAC6F88C2DF6396A00E9BEA1 /* special_tokens_map.json */,
+				CAC6F88D2DF6396A00E9BEA1 /* tokenizer.json */,
+				CAC6F88E2DF6396A00E9BEA1 /* tokenizer_config.json */,
+				CAC6F88F2DF6396A00E9BEA1 /* vocab.json */,
+			);
+			path = LLM;
+			sourceTree = "<group>";
+		};
+		CAA6179F2DD57FCF005E5907 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAA617A02DD57FDC005E5907 /* PatientInput.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAA616002DD310C9005E5907 /* Qwen3_tester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAA616222DD310CA005E5907 /* Build configuration list for PBXNativeTarget "Qwen3_tester" */;
+			buildPhases = (
+				CAA615FD2DD310C9005E5907 /* Sources */,
+				CAA615FE2DD310C9005E5907 /* Frameworks */,
+				CAA615FF2DD310C9005E5907 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Qwen3_tester;
+			packageProductDependencies = (
+				CAA616662DD539E4005E5907 /* MLXEmbedders */,
+				CAA616682DD539E4005E5907 /* MLXLLM */,
+				CAA6166A2DD539E4005E5907 /* MLXLMCommon */,
+				CAA6166C2DD539E4005E5907 /* MLXMNIST */,
+				CAA6166E2DD539E4005E5907 /* MLXVLM */,
+				CAA616732DD53B05005E5907 /* AsyncAlgorithms */,
+				CAA616762DD53B3B005E5907 /* MarkdownUI */,
+			);
+			productName = Qwen3_tester;
+			productReference = CAA616012DD310C9005E5907 /* Qwen3_tester.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAA6160D2DD310CA005E5907 /* Qwen3_testerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAA616252DD310CA005E5907 /* Build configuration list for PBXNativeTarget "Qwen3_testerTests" */;
+			buildPhases = (
+				CAA6160A2DD310CA005E5907 /* Sources */,
+				CAA6160B2DD310CA005E5907 /* Frameworks */,
+				CAA6160C2DD310CA005E5907 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAA616102DD310CA005E5907 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CAA616112DD310CA005E5907 /* Qwen3_testerTests */,
+			);
+			name = Qwen3_testerTests;
+			packageProductDependencies = (
+			);
+			productName = Qwen3_testerTests;
+			productReference = CAA6160E2DD310CA005E5907 /* Qwen3_testerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAA616172DD310CA005E5907 /* Qwen3_testerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAA616282DD310CA005E5907 /* Build configuration list for PBXNativeTarget "Qwen3_testerUITests" */;
+			buildPhases = (
+				CAA616142DD310CA005E5907 /* Sources */,
+				CAA616152DD310CA005E5907 /* Frameworks */,
+				CAA616162DD310CA005E5907 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAA6161A2DD310CA005E5907 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CAA6161B2DD310CA005E5907 /* Qwen3_testerUITests */,
+			);
+			name = Qwen3_testerUITests;
+			packageProductDependencies = (
+			);
+			productName = Qwen3_testerUITests;
+			productReference = CAA616182DD310CA005E5907 /* Qwen3_testerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAA615F92DD310C9005E5907 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					CAA616002DD310C9005E5907 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					CAA6160D2DD310CA005E5907 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = CAA616002DD310C9005E5907;
+					};
+					CAA616172DD310CA005E5907 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = CAA616002DD310C9005E5907;
+					};
+				};
+			};
+			buildConfigurationList = CAA615FC2DD310C9005E5907 /* Build configuration list for PBXProject "Qwen3_tester" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAA615F82DD310C9005E5907;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CAA616652DD539E4005E5907 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */,
+				CAA616722DD53B05005E5907 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+				CAA616752DD53B3B005E5907 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CAA616022DD310C9005E5907 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAA616002DD310C9005E5907 /* Qwen3_tester */,
+				CAA6160D2DD310CA005E5907 /* Qwen3_testerTests */,
+				CAA616172DD310CA005E5907 /* Qwen3_testerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAA615FF2DD310C9005E5907 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC6F8992DF6396A00E9BEA1 /* tokenizer.json in Resources */,
+				CAC6F89A2DF6396A00E9BEA1 /* config.json in Resources */,
+				CAC6F89B2DF6396A00E9BEA1 /* vocab.json in Resources */,
+				CAC6F89C2DF6396A00E9BEA1 /* merges.txt in Resources */,
+				CAC6F89D2DF6396A00E9BEA1 /* model.safetensors.index.json in Resources */,
+				CAC6F89E2DF6396A00E9BEA1 /* special_tokens_map.json in Resources */,
+				CAC6F89F2DF6396A00E9BEA1 /* added_tokens.json in Resources */,
+				CAC6F8A02DF6396A00E9BEA1 /* tokenizer_config.json in Resources */,
+				CAC6F8A12DF6396A00E9BEA1 /* model.safetensors in Resources */,
+				CAA617952DD57CB4005E5907 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA6160C2DD310CA005E5907 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC6F8902DF6396A00E9BEA1 /* tokenizer.json in Resources */,
+				CAC6F8912DF6396A00E9BEA1 /* config.json in Resources */,
+				CAC6F8922DF6396A00E9BEA1 /* vocab.json in Resources */,
+				CAC6F8932DF6396A00E9BEA1 /* merges.txt in Resources */,
+				CAC6F8942DF6396A00E9BEA1 /* model.safetensors.index.json in Resources */,
+				CAC6F8952DF6396A00E9BEA1 /* special_tokens_map.json in Resources */,
+				CAC6F8962DF6396A00E9BEA1 /* added_tokens.json in Resources */,
+				CAC6F8972DF6396A00E9BEA1 /* tokenizer_config.json in Resources */,
+				CAC6F8982DF6396A00E9BEA1 /* model.safetensors in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA616162DD310CA005E5907 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAA615FD2DD310C9005E5907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA617902DD57CB4005E5907 /* ContentView.swift in Sources */,
+				CAA617912DD57CB4005E5907 /* LLMEvaluator.swift in Sources */,
+				CAA617A32DD58665005E5907 /* ContentViewModel.swift in Sources */,
+				CAA617922DD57CB4005E5907 /* LLMRegistry.swift in Sources */,
+				CAA617932DD57CB4005E5907 /* Qwen3_testerApp.swift in Sources */,
+				CAA617A12DD57FDC005E5907 /* PatientInput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA6160A2DD310CA005E5907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA616142DD310CA005E5907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAA616102DD310CA005E5907 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAA616002DD310C9005E5907 /* Qwen3_tester */;
+			targetProxy = CAA6160F2DD310CA005E5907 /* PBXContainerItemProxy */;
+		};
+		CAA6161A2DD310CA005E5907 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAA616002DD310C9005E5907 /* Qwen3_tester */;
+			targetProxy = CAA616192DD310CA005E5907 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CAA616202DD310CA005E5907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Q9ZRALMG47;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAA616212DD310CA005E5907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q9ZRALMG47;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAA616232DD310CA005E5907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9ZRALMG47;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Qwen3-tester3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAA616242DD310CA005E5907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9ZRALMG47;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Qwen3-tester3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAA616262DD310CA005E5907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9ZRALMG47;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Qwen3-testerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qwen3_tester.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Qwen3_tester";
+			};
+			name = Debug;
+		};
+		CAA616272DD310CA005E5907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9ZRALMG47;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Qwen3-testerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qwen3_tester.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Qwen3_tester";
+			};
+			name = Release;
+		};
+		CAA616292DD310CA005E5907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9ZRALMG47;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Qwen3-testerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Qwen3_tester;
+			};
+			name = Debug;
+		};
+		CAA6162A2DD310CA005E5907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9ZRALMG47;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Qwen3-testerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Qwen3_tester;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAA615FC2DD310C9005E5907 /* Build configuration list for PBXProject "Qwen3_tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAA616202DD310CA005E5907 /* Debug */,
+				CAA616212DD310CA005E5907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAA616222DD310CA005E5907 /* Build configuration list for PBXNativeTarget "Qwen3_tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAA616232DD310CA005E5907 /* Debug */,
+				CAA616242DD310CA005E5907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAA616252DD310CA005E5907 /* Build configuration list for PBXNativeTarget "Qwen3_testerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAA616262DD310CA005E5907 /* Debug */,
+				CAA616272DD310CA005E5907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAA616282DD310CA005E5907 /* Build configuration list for PBXNativeTarget "Qwen3_testerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAA616292DD310CA005E5907 /* Debug */,
+				CAA6162A2DD310CA005E5907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAA616652DD539E4005E5907 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift-examples";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		CAA616722DD53B05005E5907 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+		CAA616752DD53B3B005E5907 /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAA616662DD539E4005E5907 /* MLXEmbedders */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAA616652DD539E4005E5907 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */;
+			productName = MLXEmbedders;
+		};
+		CAA616682DD539E4005E5907 /* MLXLLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAA616652DD539E4005E5907 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */;
+			productName = MLXLLM;
+		};
+		CAA6166A2DD539E4005E5907 /* MLXLMCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAA616652DD539E4005E5907 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */;
+			productName = MLXLMCommon;
+		};
+		CAA6166C2DD539E4005E5907 /* MLXMNIST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAA616652DD539E4005E5907 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */;
+			productName = MLXMNIST;
+		};
+		CAA6166E2DD539E4005E5907 /* MLXVLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAA616652DD539E4005E5907 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */;
+			productName = MLXVLM;
+		};
+		CAA616732DD53B05005E5907 /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAA616722DD53B05005E5907 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
+		CAA616762DD53B3B005E5907 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAA616752DD53B3B005E5907 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CAA615F92DD310C9005E5907 /* Project object */;
+}
