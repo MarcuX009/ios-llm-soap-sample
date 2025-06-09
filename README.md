@@ -1,4 +1,18 @@
 
+## Signing and Capabilities
+Before you can build the project on a physical device, you must configure the project signing settings:
+
+Open the project in Xcode and select the project file in the Project Navigator.
+
+Select the app target.
+
+Go to the "Signing & Capabilities" tab.
+
+In the "Team" dropdown, select your personal Apple Developer team.
+
+Xcode may show an error next to the Bundle Identifier. You must change this to a unique value. A common practice is to use a reverse domain name you own (e.g., com.yourcompanyname.AppName).
+
+Once the team is selected and the bundle identifier is unique, the signing errors should disappear, and you can build and run the app.
 ## Add all dependencies
 ```bash
 https://github.com/gonzalezreal/MarkdownUI.git
