@@ -1,0 +1,60 @@
+# ========================
+# Xcode / Swift Standard
+# ========================
+# macOS
+.DS_Store
+.localized
+
+# Build generated
+build/
+Build/
+DerivedData/
+
+# User-specific
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.xcuserstate
+
+# ========================
+# Dependency Management
+# ========================
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# CocoaPods (if you use it)
+# Pods/
+
+# Carthage (if you use it)
+# Carthage/
+
+# ========================
+# Project Specific
+# ========================
+# Sensitive Data
+Secrets.plist
+*.env
+
+# LLM Models - DO NOT COMMIT LARGE MODEL FILES
+LLM/
+*.mlmodel
+
+# Specific model file names if they are in the root
+added_tokens.json
+config.json
+merges.txt
+model.safetensors
+model.safetensors.index.json
+special_tokens_map.json
+tokenizer_config.json
+tokenizer.json
+vocab.json
